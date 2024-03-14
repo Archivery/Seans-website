@@ -7,26 +7,32 @@
     }
 }
 
-nav{
-    height: 0px;
-    background: rgb(255, 198, 91) ;
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ } 
+
+ nav{
+    height: 26px;
+    background: rgb(253, 197, 84) ;
     display: flex ;
     justify-content: space-between ;
     
-    padding: 1.5rem ;
+    padding: 1.5rem ; 
 }
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(233, 167, 34);
     font-family: Verdana ;
-    padding: 2rem;
+    padding: 2rem; 
 }
 
 nav a:hover {
     padding: 2rem;
-    background-color: #000000;
-    color: white;
+    background-color: rgb(83, 57, 5);
+    color: rgb(255, 255, 255);
   }
 
 body{
@@ -37,16 +43,27 @@ body{
 }
 
 h1{
+    color :white;
     margin: 0;
     font-size: 3vw;
     font-family: Verdana;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 h2{
+    color :white;
     margin: 0;
     font-size: 5vw;
     font-weight: bold;
     font-family: Verdana;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    
 }
 
 h3{
@@ -63,6 +80,7 @@ p{
 }
 
 #p1{
+    color :white;
     line-height: 1.6vw;
     font-size: 1vw;
 }
@@ -84,16 +102,24 @@ p{
     animation-fill-mode: both;
 }
 
+.logo{
+    color: white;
+    font-family: verdana ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
 
 .main{
     padding-top: 0rem;
     display: flex;
-    margin-top: 3rem;
+    margin-top: 0rem;
+
 }
 
 .main_content {
-    background-color: rgb(242, 178, 58);
-    width: 100vw;
+    background-color: rgb(255, 198, 91);
+    width: 50vw;
     padding-top: 5rem;
     padding-bottom: 2rem;
     padding-right: 2rem;
@@ -108,14 +134,22 @@ p{
     max-width: 120%; /* This ensures the image maintains its aspect ratio */  
 }
 
-
+.main_video{
+    position: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 90vh;
+    overflow: hidden;
+    max-height: 90vh;
+    
+    /*background-color: #000; /* Add a background color for debugging */
+}
 
 
 .main_photo img {
     max-width: 120%; /* This ensures the image maintains its aspect ratio */  
 }
 
-.main_photo img:hover{
-    max-width: 180%;
-}
 
