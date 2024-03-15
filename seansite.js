@@ -121,6 +121,20 @@ function adjustp1FontSizeOnScroll() {
     });
 }
 
+function adjustFontSizeForP1() {
+    // Get the p1 element
+    const p1Element = document.getElementById('p1');
+
+    // Increase the font size after 3 seconds
+    setTimeout(() => {
+        p1Element.style.fontSize = '1.5vw'; // Increase the font size to 20 pixels (adjust as needed)
+    }, 2500); // 3000 milliseconds = 3 seconds
+}
+
+// Call adjustFontSizeForP1 to start the font size adjustment process
+adjustFontSizeForP1();
+
+
 // Listen for scroll events
 window.addEventListener('scroll', adjustH3FontSizeOnScroll);
 

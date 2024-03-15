@@ -12,16 +12,14 @@
     100% {opacity: 1;}
  } 
 
-nav{
-    height: 26px;
-    background: rgb(253, 197, 84) ;
+ nav{
+    height: 28px;
+    background: rgb(40, 40, 40) ;
     display: flex ;
     justify-content: space-between ;
     
     padding: 1.5rem ; 
 }
-
-
 
 nav a{
     text-decoration: none;
@@ -33,7 +31,7 @@ nav a{
 
 nav a:hover {
     padding: 2rem;
-    background-color: rgb(83, 57, 5);
+    background-color: rgb(40, 40, 40) ;
     color: rgb(255, 255, 255);
   }
 
@@ -298,3 +296,4 @@ p{
 .new-button:hover {
     background-color: #adb1ae; /* Darker green on hover */
 }
+

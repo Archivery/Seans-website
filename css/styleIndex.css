@@ -13,8 +13,8 @@
  } 
 
  nav{
-    height: 26px;
-    background: rgb(253, 197, 84) ;
+    height: 28px;
+    background: rgb(40, 40, 40) ;
     display: flex ;
     justify-content: space-between ;
     
@@ -31,7 +31,7 @@ nav a{
 
 nav a:hover {
     padding: 2rem;
-    background-color: rgb(83, 57, 5);
+    background-color: rgb(40, 40, 40) ;
     color: rgb(255, 255, 255);
   }
 
@@ -83,6 +83,7 @@ p{
     color :white;
     line-height: 1.6vw;
     font-size: 1vw;
+    transition: font-size 0.5s ease; /* Transition for font size change over 0.5 seconds with ease */
 }
 
 #p2{
@@ -122,8 +123,8 @@ p{
     width: 50vw;
     padding-top: 5rem;
     padding-bottom: 2rem;
-    padding-right: 2rem;
-    padding-left: 1rem;
+    padding-right: 4vw;
+    padding-left: 4vw;
 }
 
 .main_photo {
